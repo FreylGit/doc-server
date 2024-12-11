@@ -1,0 +1,55 @@
+version: "3"
+
+volumes:
+  postgres_song_volume:
+  redis_data:
+
+services:
+  pg_doc:
+    image: postgres:14-alpine3.19
+    env_file:
+      - local.env
+    environment:
+      - "POSTGRES_DB=${PG_DATABASE_NAME}"
+      - "POSTGRES_USER=${PG_USER}"
+      - "POSTGRES_PASSWORD=${PG_PASSWORD}"
+    ports:
+      - "${PG_PORT}:5432"
+    volumes:
+      - postgres_song_volume:/var/lib/postgresql/data
+    networks:
+      - app_network
+
+  redis:
+    image: redis:7-alpine
+    container_name: redis_cache
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    networks:
+      - app_network
+
+  migrator:
+    build:
+      context: .
+      dockerfile: migrator.Dockerfile
+    restart: on-failure
+    env_file:
+      - local.env
+    environment:
+      DB_HOST: pg_doc
+      PG_DATABASE_NAME: ${PG_DATABASE_NAME}
+      PG_USER: ${PG_USER}
+      PG_PASSWORD: ${PG_PASSWORD}
+      PG_PORT: 5432
+      MIGRATION_DIR: ${MIGRATION_DIR}
+      PG_DSN: ${PG_DSN}
+    volumes:
+      - ./migrations:/root/migrations
+      - ./local.env:/root/local.env
+    networks:
+      - app_network
+
+networks:
+  app_network:
