@@ -105,14 +105,15 @@ file=@path/to/your/file.json
 
 #### 4. Получение документа
 ```http
-GET http://localhost:8081/api/docs/:id
-Authorization: Bearer <your_jwt_token>
+GET http://localhost:8081/api/docs/:id?token= <your_jwt_token>
 ```
-
-#### 5. Удаление документа
+#### 5. Получение докуменов
 ```http
-DELETE http://localhost:8081/api/docs/:id
-Authorization: Bearer <your_jwt_token>
+GET http://localhost:8081/api/docs/?token= <your_jwt_token>&limit=<limit>&....
+```
+#### 6. Удаление документа
+```http
+DELETE http://localhost:8081/api/docs/:id??token= <your_jwt_token>
 ```
 
 ---
