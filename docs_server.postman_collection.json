@@ -1,0 +1,211 @@
+{
+	"info": {
+		"_postman_id": "91b27247-c732-43fb-a6d5-770688e32f26",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18712570"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8081/api/docs/1/?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MzQxODM5OTgsImp0aSI6IjEiLCJzdWIiOiJ0ZXN0QG1haWwucnUifQ.9hdzN-f9Tr16AJ2vx9a6doU18o9B5TWkr9ZBPq6qNls",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api/docs/1/?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MzQxODM5OTgsImp0aSI6IjEiLCJzdWIiOiJ0ZXN0QG1haWwucnUifQ.9hdzN-f9Tr16AJ2vx9a6doU18o9B5TWkr9ZBPq6qNls",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"docs",
+						"1",
+						""
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MzQxODM5OTgsImp0aSI6IjEiLCJzdWIiOiJ0ZXN0QG1haWwucnUifQ.9hdzN-f9Tr16AJ2vx9a6doU18o9B5TWkr9ZBPq6qNls"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/api/docs/1/?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MzQxODM5OTgsImp0aSI6IjEiLCJzdWIiOiJ0ZXN0QG1haWwucnUifQ.9hdzN-f9Tr16AJ2vx9a6doU18o9B5TWkr9ZBPq6qNls",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api/docs/1/?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MzQxODM5OTgsImp0aSI6IjEiLCJzdWIiOiJ0ZXN0QG1haWwucnUifQ.9hdzN-f9Tr16AJ2vx9a6doU18o9B5TWkr9ZBPq6qNls",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"docs",
+						"1",
+						""
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MzQxODM5OTgsImp0aSI6IjEiLCJzdWIiOiJ0ZXN0QG1haWwucnUifQ.9hdzN-f9Tr16AJ2vx9a6doU18o9B5TWkr9ZBPq6qNls"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/api/docs?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MzQxODM5OTgsImp0aSI6IjEiLCJzdWIiOiJ0ZXN0QG1haWwucnUifQ.9hdzN-f9Tr16AJ2vx9a6doU18o9B5TWkr9ZBPq6qNls&limit=10&login=test@mail.ru&is_public=false&is_file=true&mime=json",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api/docs?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MzQxODM5OTgsImp0aSI6IjEiLCJzdWIiOiJ0ZXN0QG1haWwucnUifQ.9hdzN-f9Tr16AJ2vx9a6doU18o9B5TWkr9ZBPq6qNls&limit=10&login=test@mail.ru&is_public=false&is_file=true&mime=json",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"docs"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MzQxODM5OTgsImp0aSI6IjEiLCJzdWIiOiJ0ZXN0QG1haWwucnUifQ.9hdzN-f9Tr16AJ2vx9a6doU18o9B5TWkr9ZBPq6qNls"
+						},
+						{
+							"key": "limit",
+							"value": "10"
+						},
+						{
+							"key": "login",
+							"value": "test@mail.ru"
+						},
+						{
+							"key": "is_public",
+							"value": "false"
+						},
+						{
+							"key": "is_file",
+							"value": "true"
+						},
+						{
+							"key": "mime",
+							"value": "json"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/api/docs",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "multipart/form-data",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "meta",
+							"value": "{\n\"name\": \"sample1.json\",\n\"file\": true,\n\"public\": false,\n\"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MzQxODM5OTgsImp0aSI6IjEiLCJzdWIiOiJ0ZXN0QG1haWwucnUifQ.9hdzN-f9Tr16AJ2vx9a6doU18o9B5TWkr9ZBPq6qNls\",\n\"mime\": \"json\",\n\"grant\": [\n\"test@mail.ru\"\n]\n}",
+							"type": "text"
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": "postman-cloud:///1efb87fe-5fc9-4db0-8e56-f257185abc1a"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/docs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"docs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/api/auth",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"login\":\"test@mail.ru\",\n    \"pswd\":\"1FEwwefwek4Evr@\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/auth",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"auth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/api/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"token\":\"fewfw142veKfwq24\",\n    \"login\":\"test@mail.ru\",\n    \"pswd\":\"1FEwwefwek4Evr@\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
